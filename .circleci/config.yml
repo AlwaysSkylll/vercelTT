@@ -1,3 +1,11 @@
 # CircleCI configuration file
 
 version: 2.1
+
+workflows:
+  # Name of workflow
+  hello_and_goodbye:
+    # List of jobs that will run
+    jobs:
+      - say_hello
+      - say_goodbye
